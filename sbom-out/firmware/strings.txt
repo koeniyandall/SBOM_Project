@@ -1,0 +1,214 @@
+=== Extracting printable strings from: /Users/keoniyandall/Senior_Project/ground-truth/out/v1.2.13/firmware.elf ===
+DtDgDdD8D<D
+ k*F1F
+ c#h+D#`
+ k*F1F
+.D hCh
+v1F(D.D
+`+i3D+aci3Dca#i
+x`kK@am
+aZi:DZa
+aZi*DZa
+hYhciX
+##bE#c`
+jBDbaI
+##bI#c`
+##b[#c`
+iQj"jP
+(cg#c`
+(cq#c`(F
+KBKA!n
+SBSAbo
+q#(cc`(F
+Tq#c`(F
+a*Fea)F(F
+%.Fbj"
+4S#g#e
+4S#g#e
+FalZE(
+ "j2D"b
+Dci2Fk
+LDvEDD=
+\DLDDD
+RF)F F
+hci*F1F
+ci+Dca
++F:FAF F
+&faBTai
+pG1.2.13
+unknown header flags set
+unknown compression method
+incorrect header check
+invalid window size
+header crc mismatch
+invalid block type
+invalid stored block lengths
+too many length or distance symbols
+invalid code lengths set
+invalid bit length repeat
+invalid code -- missing end-of-block
+invalid literal/lengths set
+invalid distances set
+invalid literal/length code
+invalid distance code
+invalid distance too far back
+incorrect data check
+incorrect length check
+need dictionary
+stream end
+file error
+stream error
+data error
+insufficient memory
+buffer error
+incompatible version
+Qkkbal
+
+GCC: (15:13.2.rel1-2) 13.2.1 20231009
+../../../../../../newlib/libc/string
+/usr/lib/gcc/arm-none-eabi/13.2.1/include
+/build/newlib-38V0JC/newlib-4.4.0.20231231/newlib/libc/include
+memset.c
+stddef.h
+string.h
+$//#!'/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
+.!#!'/-/-/-/
+.!#!%//!#!"!!/0"!
+ /"/"!!/0#//
+ !#!//"!!!!!#!
+../../../../../../newlib/libc/string
+/usr/lib/gcc/arm-none-eabi/13.2.1/include
+/build/newlib-38V0JC/newlib-4.4.0.20231231/newlib/libc/include
+memcmp.c
+stddef.h
+string.h
+long long int
+size_t
+long long unsigned int
+aligned_addr
+unsigned char
+GNU C17 13.2.1 20231009 -mfloat-abi=soft -mthumb -mfloat-abi=soft -march=armv7e-m -g -O2 -fno-builtin
+/build/newlib-38V0JC/newlib-4.4.0.20231231/build_nano/arm-none-eabi/thumb/v7e-m/nofp/newlib
+../../../../../../newlib/libc/string/memset.c
+short unsigned int
+long double
+memset
+short int
+buffer
+../../../../../../newlib/libc/machine/arm/memcpy-armv7m.S
+GNU AS 2.42
+memcpy
+../../../../../../newlib/libc/string/memcmp.c
+memcmp
+/build/newlib-38V0JC/newlib-4.4.0.20231231/build_nano/arm-none-eabi/thumb/v7e-m/nofp/newlib
+../../../../../../newlib/libc/machine/arm
+memcpy-armv7m.S
+main.c
+unpacked
+adler32.c
+compress.c
+crc32.c
+crc_table
+deflate.c
+slide_hash
+putShortMSB
+longest_match
+read_buf
+fill_window
+flush_pending
+deflate_slow
+deflate_fast
+deflate_stored
+deflateStateCheck
+configuration_table
+inflate.c
+updatewindow
+inflateStateCheck
+lenfix.1
+distfix.0
+order.2
+inffast.c
+inftrees.c
+lext.2
+dext.0
+lbase.3
+dbase.1
+init_block
+pqdownheap
+scan_tree
+send_tree
+compress_block
+extra_lbits
+base_length
+extra_dbits
+base_dist
+build_tree
+bi_windup
+bi_flush
+static_l_desc
+static_d_desc
+static_bl_desc
+bl_order
+static_ltree
+static_dtree
+extra_blbits
+uncompr.c
+zutil.c
+memset.c
+libc_a-memcpy.o
+memcmp.c
+uncompress
+deflate
+inflateReset2
+deflateResetKeep
+_tr_flush_block
+_sidata
+_length_code
+inflate
+inflate_fast
+_sdata
+_tr_stored_block
+Reset_Handler
+inflateInit_
+deflateInit_
+adler32
+vector_table
+crc32_z
+zmemcpy
+Default_Handler
+_tr_flush_bits
+deflateInit2_
+inflateResetKeep
+inflateReset
+memcmp
+_dist_code
+deflateReset
+memset
+z_errmsg
+result
+uncompress2
+_estack
+_edata
+adler32_z
+_tr_init
+inflateEnd
+zmemzero
+inflateInit2_
+deflateEnd
+inflate_table
+_tr_align
+.symtab
+.strtab
+.shstrtab
+.isr_vector
+.ARM.exidx
+.comment
+.ARM.attributes
+.debug_info
+.debug_abbrev
+.debug_loclists
+.debug_aranges
+.debug_line
+.debug_str
+.debug_frame
+.debug_line_str

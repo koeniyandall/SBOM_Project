@@ -1,0 +1,90 @@
+{
+  "binary": "/Users/keoniyandall/Senior_Project/ground-truth/out/v1.2.13/firmware.elf",
+  "model": "claude-sonnet-5-5",
+  "generated": "2026-11-11T15:47:58.024467+00:00",
+  "chunks": 1,
+  "strings_total": 200,
+  "strings_trimmed": 0,
+  "usage": {
+    "input": 99044,
+    "output": 906,
+    "cache_read": 0
+  },
+  "candidates": [
+    {
+      "name": "newlib (nano)",
+      "version": "4.4.0.20231231",
+      "type": "library",
+      "confidence": "high",
+      "evidence": [
+        {
+          "kind": "string",
+          "value": "/build/newlib-38V0JC/newlib-4.4.0.20231231/newlib/libc/include"
+        },
+        {
+          "kind": "string",
+          "value": "../../../../../../newlib/libc/machine/arm/memcpy-armv7m.S"
+        },
+        {
+          "kind": "string",
+          "value": "/build/newlib-38V0JC/newlib-4.4.0.20231231/build_nano/arm-none-eabi/thumb/v7e-m/nofp/newlib"
+        },
+        {
+          "kind": "string",
+          "value": "memset.c"
+        },
+        {
+          "kind": "string",
+          "value": "memcmp.c"
+        },
+        {
+          "kind": "function",
+          "value": "memset, memcpy, memcmp"
+        }
+      ],
+      "license": "",
+      "purl": "",
+      "version_notes": "The version comes from the Debian newlib 4.4.0.20231231 build path. Only the string functions memset, memcpy and memcmp are linked in."
+    },
+    {
+      "name": "zlib",
+      "version": "1.2.13",
+      "type": "library",
+      "confidence": "high",
+      "evidence": [
+        {
+          "kind": "string",
+          "value": "pG1.2.13",
+          "location": "strings (zlibVersion/ZLIB_VERSION)"
+        },
+        {
+          "kind": "string",
+          "value": "incorrect header check"
+        },
+        {
+          "kind": "string",
+          "value": "invalid distance too far back"
+        },
+        {
+          "kind": "string",
+          "value": "too many length or distance symbols"
+        },
+        {
+          "kind": "function",
+          "value": "deflateInit2_, inflateInit2_, inflate_fast, inflate_table, _tr_flush_block, compress2, uncompress2, crc32_z, adler32_z"
+        },
+        {
+          "kind": "string",
+          "value": "deflate.c, inflate.c, inffast.c, inftrees.c, trees.c symbols, zutil.c, uncompr.c, compress.c, adler32.c, crc32.c"
+        }
+      ],
+      "license": "Zlib",
+      "purl": "pkg:generic/zlib@1.2.13",
+      "version_notes": "Version string 1.2.13 found. The code checks version[0]=='1' and stream size 0x38, which matches the zlib ABI."
+    }
+  ],
+  "notes": [
+    "The firmware is a bare-metal Cortex-M (armv7e-m, soft-float) test program. It compresses and decompresses a 256-byte buffer with zlib and compares the result. The toolchain is GCC 13.2.1 arm-none-eabi (Arm GNU Toolchain 13.2.rel1). It is not reported as a separate component because only the newlib string routines are linked."
+  ],
+  "errors": []
+}

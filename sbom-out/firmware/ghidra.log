@@ -1,0 +1,124 @@
+INFO  Using log config file: jar:file:/Users/keoniyandall/Downloads/ghidra_12.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: /Users/keoniyandall/Library/ghidra/ghidra_12.2_PUBLIC/application.log (LoggingInitialization)  
+INFO  Loading user preferences: /Users/keoniyandall/Library/ghidra/ghidra_12.2_PUBLIC/preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (1364 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)  
+INFO  Loaded 6 trusted CA certificates from the OS trust store. (DefaultTrustManagerFactory)  
+INFO  Loaded 118 trusted CA certificates from the Java default trust store. (DefaultTrustManagerFactory)  
+INFO  Starting cache cleanup: /var/tmp/keoniyandall-ghidra/fscache2 (FileCacheMaintenanceDaemon)  
+INFO  Finished cache cleanup, estimated storage used: 0 (FileCacheMaintenanceDaemon)  
+INFO  Headless startup complete (3092 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 60 extension points (19 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    /Users/keoniyandall/Downloads/ghidra_12.2_PUBLIC/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /Users/keoniyandall/Downloads/ghidra_12.2_PUBLIC/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /Users/keoniyandall/Downloads/ghidra_12.2_PUBLIC/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /Users/keoniyandall/Downloads/ghidra_12.2_PUBLIC/Ghidra/Processors/JVM/ghidra_scripts
+    /Users/keoniyandall/Downloads/ghidra_12.2_PUBLIC/Ghidra/Processors/DATA/ghidra_scripts
+    /Users/keoniyandall/Downloads/ghidra_12.2_PUBLIC/Ghidra/Features/Decompiler/ghidra_scripts
+    /Users/keoniyandall/Downloads/ghidra_12.2_PUBLIC/Ghidra/Features/BSim/ghidra_scripts
+    /Users/keoniyandall/Downloads/ghidra_12.2_PUBLIC/Ghidra/Features/FunctionID/ghidra_scripts
+    /Users/keoniyandall/Downloads/ghidra_12.2_PUBLIC/Ghidra/Features/Swift/ghidra_scripts
+    /Users/keoniyandall/Downloads/ghidra_12.2_PUBLIC/Ghidra/Features/PyGhidra/ghidra_scripts
+    /Users/keoniyandall/Downloads/ghidra_12.2_PUBLIC/Ghidra/Features/FileFormats/ghidra_scripts
+    /Users/keoniyandall/Downloads/ghidra_12.2_PUBLIC/Ghidra/Features/VersionTracking/ghidra_scripts
+    /Users/keoniyandall/Downloads/ghidra_12.2_PUBLIC/Ghidra/Processors/Atmel/ghidra_scripts
+    /Users/keoniyandall/Downloads/ghidra_12.2_PUBLIC/Ghidra/Features/Base/ghidra_scripts
+    /Users/keoniyandall/Downloads/ghidra_12.2_PUBLIC/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /Users/keoniyandall/Downloads/ghidra_12.2_PUBLIC/Ghidra/Processors/8051/ghidra_scripts
+    /Users/keoniyandall/Downloads/ghidra_12.2_PUBLIC/Ghidra/Debug/Debugger/ghidra_scripts
+    /Users/keoniyandall/Downloads/ghidra_12.2_PUBLIC/Ghidra/Features/BytePatterns/ghidra_scripts
+    /Users/keoniyandall/Downloads/ghidra_12.2_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /Users/keoniyandall/Downloads/ghidra_12.2_PUBLIC/Ghidra/Features/PDB/ghidra_scripts
+    /Users/keoniyandall/Downloads/ghidra_12.2_PUBLIC/Ghidra/Processors/PIC/ghidra_scripts
+    /Users/keoniyandall/Downloads/ghidra_12.2_PUBLIC/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: /Users/keoniyandall/Senior_Project/Ghidra_folder (HeadlessAnalyzer)  
+INFO  Opening project: /Users/keoniyandall/Senior_Project/Ghidra_folder (HeadlessProject)  
+INFO  REPORT: Processing input files:  (HeadlessAnalyzer)  
+INFO       project: /Users/keoniyandall/Senior_Project/Ghidra_folder (HeadlessAnalyzer)  
+INFO  IMPORTING: file:///Users/keoniyandall/Senior_Project/ground-truth/out/v1.2.13/firmware.elf (HeadlessAnalyzer)  
+INFO  Using Loader: Executable and Linking Format (ELF) (ProgramLoader)  
+INFO  Using Language/Compiler: ARM:LE:32:v8:default (ProgramLoader)  
+INFO  Using Library Search Path: [., /System/Library/dyld/dyld_shared_cache_arm64e, /System/Library/dyld/dyld_shared_cache_x86_64, /System/Library/dyld/dyld_shared_cache_x86_64h, /System/Cryptexes/OS/System/Library/dyld/dyld_shared_cache_arm64e, /System/Cryptexes/OS/System/Library/dyld/dyld_shared_cache_x86_64, /System/Cryptexes/OS/System/Library/dyld/dyld_shared_cache_x86_64h, /Users/keoniyandall/Library/Java/Extensions, /Library/Java/Extensions, /Network/Library/Java/Extensions, /System/Library/Java/Extensions, /usr/lib/java] (ProgramLoader)  
+INFO  Additional info:
+Loading file:///Users/keoniyandall/Senior_Project/ground-truth/out/v1.2.13/firmware.elf?MD5=69097d8d43dcb8866f8bdaa601812366...
+Skipping section [.data] with invalid size 0x0
+------------------------------------------------
+
+ (ProgramLoader)  
+INFO  IMPORTING: Loaded 0 additional files (HeadlessAnalyzer)  
+INFO  /firmware.elf: file deleted (keoniyandall) (LocalFileSystem)  
+INFO  Deleted local file firmware.elf (GhidraFileData)  
+WARN  REPORT: Removed conflicting program file from project: /firmware.elf (HeadlessAnalyzer)  
+INFO  ANALYZING all memory and code: file:///Users/keoniyandall/Senior_Project/ground-truth/out/v1.2.13/firmware.elf (HeadlessAnalyzer)  
+INFO  Added 213 source map entries (DWARFImporter)  
+INFO  DWARF ver[5], 3 compUnits, 55 DIES, import - total elapsed: 79ms (DWARFImportSummary)  
+INFO  DWARF data type import - elapsed: 12ms (DWARFImportSummary)  
+INFO  DWARF func & symbol import - elapsed: 38ms (DWARFImportSummary)  
+INFO  DWARF types imported: 15 (DWARFImportSummary)  
+INFO  DWARF enums from macros - elapsed: 1ms (DWARFImportSummary)  
+INFO  DWARF compile dirs: [/build/newlib-38V0JC/newlib-4.4.0.20231231/build_nano/arm-none-eabi/thumb/v7e-m/nofp/newlib] (DWARFImportSummary)  
+INFO  DWARF producers: [GNU AS 2.42, GNU C17 13.2.1 20231009 -mfloat-abi=soft -mthumb -mfloat-abi=soft -march=armv7e-m -g -O2 -fno-builtin] (DWARFImportSummary)  
+INFO  DWARF source languages: [DW_LANG_C11, DW_LANG_Mips_Assembler] (DWARFImportSummary)  
+INFO  DWARF compUnit: ../../../../../../newlib/libc/string/memset.c (DWARFImportSummary)  
+INFO  DWARF compUnit: ../../../../../../newlib/libc/machine/arm/memcpy-armv7m.S (DWARFImportSummary)  
+INFO  DWARF compUnit: ../../../../../../newlib/libc/string/memcmp.c (DWARFImportSummary)  
+ERROR DWARF un-recoverable expressions: (DWARFImportSummary)  
+ERROR   DW_OP_breg1; DW_OP_const1u; DW_OP_and; DW_OP_stack_value -> 1 (DWARFImportSummary)  
+ERROR   DW_OP_reg2 -> 2 (DWARFImportSummary)  
+ERROR   DW_OP_reg1 -> 3 (DWARFImportSummary)  
+ERROR   DW_OP_reg0 -> 4 (DWARFImportSummary)  
+INFO  Packed database cache: /var/tmp/keoniyandall-ghidra/packed-db-cache (PackedDatabaseCache)  
+INFO  Applied data type archive: generic_clib (ApplyDataArchiveAnalyzer)  
+INFO  No functions detected that make variadic function calls with format strings containing format specifiers (FormatStringAnalyzer)  
+INFO  -----------------------------------------------------
+    ARM Constant Reference Analyzer            0.398 secs
+    ARM Symbol                                 0.001 secs
+    ASCII Strings                              0.269 secs
+    Apply Data Archives                        0.567 secs
+    Call Convention ID                         0.683 secs
+    Call-Fixup Installer                       0.001 secs
+    Create Address Tables                      0.009 secs
+    Create Address Tables - One Time           0.015 secs
+    Create Function                            0.000 secs
+    DWARF                                      0.127 secs
+    Data Reference                             0.035 secs
+    Decompiler Switch Analysis                 0.753 secs
+    Demangler GNU                              0.064 secs
+    Disassemble Entry Points                   0.864 secs
+    Embedded Media                             0.012 secs
+    External Entry References                  0.001 secs
+    Function ID                                0.061 secs
+    Function Start Pre Search                  0.008 secs
+    Function Start Search                      0.069 secs
+    Function Start Search After Code           0.015 secs
+    Function Start Search After Data           0.035 secs
+    GCC Exception Handlers                     0.025 secs
+    Non-Returning Functions - Discovered       0.028 secs
+    Non-Returning Functions - Known            0.002 secs
+    Reference                                  0.048 secs
+    Shared Return Calls                        0.009 secs
+    Source Language Support                    0.001 secs
+    Stack                                      0.301 secs
+    Subroutine References                      0.008 secs
+    Variadic Function Signature Override       0.026 secs
+-----------------------------------------------------
+     Total Time   4 secs
+-----------------------------------------------------
+ (AutoAnalysisManager)  
+INFO  REPORT: Analysis succeeded for file: file:///Users/keoniyandall/Senior_Project/ground-truth/out/v1.2.13/firmware.elf (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: /Users/keoniyandall/Downloads/ghidra_12.2_PUBLIC/support/export_code.py '/Users/keoniyandall/Senior_Project/sbom-out/firmware/decomp.c'  (HeadlessAnalyzer)  
+INFO  SCRIPT: /Users/keoniyandall/Downloads/ghidra_12.2_PUBLIC/support/export_code.py (HeadlessAnalyzer)  
+WARN  Decompiling 080047d1, pcode error at 080047d1: Invalid instruction address (improperly aligned) (DecompileCallback)  
+INFO  ANALYZING changes made by post scripts: file:///Users/keoniyandall/Senior_Project/ground-truth/out/v1.2.13/firmware.elf (HeadlessAnalyzer)  
+INFO  REPORT: Post-analysis succeeded for file: file:///Users/keoniyandall/Senior_Project/ground-truth/out/v1.2.13/firmware.elf (HeadlessAnalyzer)  
+INFO  /firmware.elf: file created (keoniyandall) (LocalFileSystem)  
+INFO  REPORT: Save succeeded for: /firmware.elf (Ghidra_folder:/firmware.elf) (HeadlessAnalyzer)  
+INFO  REPORT: Import succeeded (HeadlessAnalyzer)  
+Last used Python executable: ['/Users/keoniyandall/Library/ghidra/ghidra_12.2_PUBLIC/venv/bin/python3']
+Using Python command: "/Users/keoniyandall/Library/ghidra/ghidra_12.2_PUBLIC/venv/bin/python3"
+Switching to Ghidra virtual environment: /Users/keoniyandall/Library/ghidra/ghidra_12.2_PUBLIC/venv

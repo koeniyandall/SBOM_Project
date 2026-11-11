@@ -1,0 +1,9 @@
+{
+  "firmware": "out/v1.3.1/firmware.bin",
+  "architecture": "ARM Cortex-M4 (Thumb-2), little-endian",
+  "flash_base_address": "0x08000000",
+  "components": [
+    {"name": "zlib",   "version": "1.3.1", "source": "https://github.com/madler/zlib"},
+    {"name": "newlib-nano", "version": "from arm-none-eabi-gcc (15:13.2.rel1-2) 13.2.1 20231009", "note": "C library (memcmp, memcpy)"}
+  ]
+}

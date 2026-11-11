@@ -1,0 +1,4 @@
+IADD:00000000:/firmware.bin
+IDSET:/firmware.bin:a81147be31b164356167453875
+IADD:00000001:/firmware.elf
+IDSET:/firmware.elf:a81147be320164609925025791
