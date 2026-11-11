@@ -3,7 +3,7 @@ How to Run
 1. Clone the repository
 2. Set claude API in enviroment variables ( > export ANTHROPIC_API_KEY=...)
 3. Go to tools/
-4. run ./run_sbom.sh <binary file> ... <more binary files> (will most likely prompt you to download some dependencies)
+4. run ./run_sbom.sh [binary file] ... [more binary files] (will most likely prompt you to download some dependencies)
 
 
 How it Works
