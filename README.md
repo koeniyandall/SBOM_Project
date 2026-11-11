@@ -13,3 +13,6 @@ How it Works
 3. Feed these outputs to claude API
 4. Claude returns "candidates" based on the strings and headless ghidra output with certainty scores and evidence
 
+Test Runs:
+
+ ./run_sbom.sh ../ground-truth/out/littlefs-v2.8.0/cortex-m0-O0  ../ground-truth/out/littlefs-v2.9.3/cortex-m0-O0
