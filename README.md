@@ -13,6 +13,9 @@ How it Works
 3. Feed these outputs to claude API
 4. Claude returns "candidates" based on the strings and headless ghidra output with certainty scores and evidence
 
-Test Runs:
+Next Steps
+1. Verify Claude Candidate output
+   a. check hallucination, does claude evidence actually occur in strings.txt and decomp.c
+2. Find a way to bindiff decomp.c with a compiled version of that open source software and version
 
- ./run_sbom.sh ../ground-truth/out/littlefs-v2.8.0/cortex-m0-O0  ../ground-truth/out/littlefs-v2.9.3/cortex-m0-O0
+After these steps, we should have a real, verified candidates list alongside confidence scores
