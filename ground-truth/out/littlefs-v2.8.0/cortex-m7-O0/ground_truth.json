@@ -1,0 +1,12 @@
+{
+  "firmware": "out/littlefs-v2.8.0/cortex-m7-O0/firmware.bin",
+  "cpu": "cortex-m7",
+  "architecture": "ARMv7E-M (Thumb-2, DSP), little-endian",
+  "optimization": "-O0",
+  "flash_base_address": "0x08000000",
+  "ghidra_language": "ARM:LE:32:Cortex",
+  "components": [
+    {"name": "littlefs", "version": "2.8.0", "source": "https://github.com/littlefs-project/littlefs"},
+    {"name": "newlib-nano", "version": "from arm-none-eabi-gcc (Arm GNU Toolchain 15.3.Rel2 (Build arm-15.181)) 15.3.1 20260627", "note": "C library (memcpy, memset, etc.)"}
+  ]
+}

@@ -110,6 +110,8 @@ CONF_RANK = {"low": 0, "medium": 1, "high": 2}
 # ---------------------------------------------------------------- inputs
 
 def get_strings(binary: Path, strings_script: Path | None, min_len: int) -> list[str]:
+    
+    #basically if the string script exists use it, if not -- default to strings -a -n 6
     if strings_script:
         cmd = ["bash", str(strings_script), str(binary)]
     else:
@@ -125,6 +127,7 @@ def get_strings(binary: Path, strings_script: Path | None, min_len: int) -> list
 
 def fit_strings(strings: list[str], budget: int) -> tuple[str, int]:
     """Return strings joined under budget chars, prioritizing interesting ones."""
+    # here were basically seeing if the strings cmd can fit within our "budget"
     full = "\n".join(strings)
     if len(full) <= budget:
         return full, 0
@@ -138,6 +141,7 @@ def fit_strings(strings: list[str], budget: int) -> tuple[str, int]:
         size += len(s) + 1
     kept_set = set(kept)
     ordered = [s for s in strings if s in kept_set]  # preserve original order
+    #return ordered strings and the amount omitted
     return "\n".join(ordered), len(strings) - len(ordered)
 
 
