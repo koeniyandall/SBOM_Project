@@ -27,6 +27,7 @@ POST_SCRIPT="${POST_SCRIPT:-$GHIDRA_HOME/support/export_code.py}"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 STRINGS_SCRIPT="${STRINGS_SCRIPT:-$SCRIPT_DIR/extract_strings.sh}"
 SBOM_PY="${SBOM_PY:-$SCRIPT_DIR/sbom_candidates.py}"
+VERIFY_PY="${VERIFY_PY:-$SCRIPT_DIR/verify_candidates.py}"
 OUT_ROOT="${OUT_ROOT:-$PROJECT_DIR/sbom-out}"
 # Use the venv next to this script if present (Homebrew blocks global pip installs).
 if [[ -x "$SCRIPT_DIR/.venv/bin/python3" ]]; then
@@ -52,6 +53,7 @@ preflight() {
     [[ -x "$GHIDRA_HOME/support/pyghidraRun" ]] || die "pyghidraRun not found under GHIDRA_HOME=$GHIDRA_HOME"
     [[ -f "$POST_SCRIPT" ]]   || die "Post-script not found: $POST_SCRIPT"
     [[ -f "$SBOM_PY" ]]       || die "sbom_candidates.py not found: $SBOM_PY"
+    [[ -f "$VERIFY_PY" ]] || die "verify_candidates.py not found: $VERIFY_PY"
     [[ -n "${ANTHROPIC_API_KEY:-}" ]] || die "Set ANTHROPIC_API_KEY first (e.g. in ~/.zshrc)."
     command -v "$PYTHON" >/dev/null || die "python not found: $PYTHON"
     "$PYTHON" -c 'import anthropic' 2>/dev/null || die "anthropic missing. Run: python3 -m venv \"$SCRIPT_DIR/.venv\" && \"$SCRIPT_DIR/.venv/bin/pip\" install anthropic"
@@ -146,6 +148,8 @@ process_one() {
         --model "$SBOM_MODEL" \
         --out "$out/candidates.json" \
         --cyclonedx "$out/sbom.cdx.json"
+
+        "$PYTHON" "$VERIFY_PY" "$out"
 
     ok "Done: $out/candidates.json, $out/sbom.cdx.json"
 }
