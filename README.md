@@ -14,8 +14,6 @@ How it Works
 4. Claude returns "candidates" based on the strings and headless ghidra output with certainty scores and evidence
 
 Next Steps
-1. Verify Claude Candidate output
-   a. check hallucination, does claude evidence actually occur in strings.txt and decomp.c
-2. Find a way to bindiff decomp.c with a compiled version of that open source software and version
+1. Find a way to bindiff decomp.c with a compiled version of that open source software and version (use the candidates.verified.json)
 
 After these steps, we should have a real, verified candidates list alongside confidence scores
