@@ -21,12 +21,22 @@ def check_exists(check: str, kind: str) -> bool:
     return not found
 
 def main():
+    kept_candidates = []
+    rejected = []
     for candidate in data["candidates"]:
         kept = []
         for artifact in candidate["evidence"]:
             if check_exists(artifact["value"], artifact["kind"]):
                 kept.append(artifact)
         candidate["evidence"] = kept
+
+        if kept:
+            kept_candidates.append(candidate)
+        else:
+            rejected.append(candidate["name"])
+
+    data["candidates"] = kept_candidates
+    data["rejected"] = rejected
     with open("/Users/keoniyandall/SBOM_Project/sbom-out/firmware/candidates.filtered.json", "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
 
