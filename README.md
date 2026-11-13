@@ -12,6 +12,7 @@ How it Works
 2. Run headless ghidra decompiler
 3. Feed these outputs to claude API
 4. Claude returns "candidates" based on the strings and headless ghidra output with certainty scores and evidence
+5. verify_candidates.py checks if the evidence provided by claude actually occurs and removes evidence not found in either strings.txt or decomp.c
 
 Next Steps
 1. Find a way to bindiff decomp.c with a compiled version of that open source software and version (use the candidates.verified.json)
