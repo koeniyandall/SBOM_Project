@@ -1,0 +1,83 @@
+{
+  "binary": "/Users/keoniyandall/SBOM_Project/ground-truth/out/cjson-v1.7.18/cortex-m0-O0/firmware.bin",
+  "model": "claude-sonnet-5-5",
+  "generated": "2026-11-13T14:42:10.915915+00:00",
+  "chunks": 1,
+  "strings_total": 85,
+  "strings_trimmed": 0,
+  "usage": {
+    "input": 132198,
+    "output": 1449,
+    "cache_read": 1983
+  },
+  "candidates": [
+    {
+      "name": "cJSON",
+      "version": "",
+      "type": "library",
+      "confidence": "high",
+      "evidence": [
+        {
+          "kind": "string",
+          "value": "%1.15g"
+        },
+        {
+          "kind": "string",
+          "value": "%1.17g"
+        },
+        {
+          "kind": "string",
+          "value": "{\"ecu\":\"BMS\",\"fw\":3,\"limits\":{\"vmax\":4.2,\"tmax\":55}}"
+        }
+      ],
+      "version_notes": "The code matches cJSON 1.7.x. It has the nesting limit of 1000, cJSON_Parse, the case-insensitive compare and the %1.15g/%1.17g number printing. The sources have no version string, so the exact version is unknown.",
+      "license": "MIT",
+      "purl": "pkg:github/DaveGamble/cJSON"
+    },
+    {
+      "name": "newlib",
+      "version": "",
+      "type": "library",
+      "confidence": "high",
+      "evidence": [
+        {
+          "kind": "string",
+          "value": "/Volumes/data/jenkins/workspace/gnu_toolchains/arm_builds/arm-15/src/newlib-cygwin/newlib/libc/stdlib/gdtoa-gethex.c"
+        },
+        {
+          "kind": "string",
+          "value": "/Volumes/data/jenkins/workspace/gnu_toolchains/arm_builds/arm-15/src/newlib-cygwin/newlib/libc/stdlib/mprec.c"
+        },
+        {
+          "kind": "string",
+          "value": "REENT malloc succeeded"
+        },
+        {
+          "kind": "string",
+          "value": "Balloc succeeded"
+        },
+        {
+          "kind": "string",
+          "value": "assertion \"%s\" failed: file \"%s\", line %d%s%s"
+        }
+      ],
+      "version_notes": "Built by an Arm GNU toolchain (arm-15 jenkins path, likely Arm GNU Toolchain 15.x / newlib-cygwin). The exact newlib version is not given. The decompiled code looks like newlib-nano (non-reentrant-lite sbrk-based malloc, stubbed syscalls returning errno 0x58), but this is not confirmed.",
+      "license": "",
+      "purl": ""
+    },
+    {
+      "name": "libgcc (ARM soft-float / integer division helpers)",
+      "version": "",
+      "type": "library",
+      "confidence": "medium",
+      "evidence": [],
+      "version_notes": "Soft-float double-precision routines and thumb1 case helpers are linked in for a Cortex-M0-class target.",
+      "license": "",
+      "purl": ""
+    }
+  ],
+  "notes": [
+    "The cJSON version is not determined. The newlib libc is probably the nano variant, which would need confirmation, e.g. from a vsnprintf/_svfprintf_float signature. The libgcc entries are identified only from the code structure; no libgcc strings are present."
+  ],
+  "errors": []
+}
